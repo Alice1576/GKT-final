@@ -1,0 +1,325 @@
+=== PLANT STREAM INVENTORY FROM optimizeCodexBinary.py BEST CASE ===
+Source report file: data_slutrapport.txt
+Number of printed plant streams: 23
+Internal column streams written separately: 188
+Internal column stream LaTeX file: column_internal_streams_table.tex
+
+[001] Fresh feed
+  source: Fresh propane and water feed before plant conditioning.
+  phase: vapor
+  temperature: 283.15 K (10 deg C)
+  pressure: 1.01325 bar
+  total flow: 1239.60822975 mol/s
+  enthalpy: -690005.85224 W
+  component flows and mole fractions:
+    propane: 112.69165725 mol/s  x=0.0909090909091
+    propene: 0 mol/s  x=0
+    H2: 0 mol/s  x=0
+    H2O: 1126.9165725 mol/s  x=0.909090909091
+
+[002] First reactor preheated water side stream
+  source: Optimizer assumption: water is available at the first reactor temperature after flash-1 reheating.
+  phase: vapor
+  temperature: 872.6357769 K (599.4857769 deg C)
+  pressure: 1.01325 bar
+  total flow: 1126.9165725 mol/s
+  enthalpy: 23550194.5028 W
+  component flows and mole fractions:
+    propane: 0 mol/s  x=0
+    propene: 0 mol/s  x=0
+    H2: 0 mol/s  x=0
+    H2O: 1126.9165725 mol/s  x=1
+
+[003] First process oven propane-only inlet
+  source: Dry propane-containing part of the fresh feed before ProcessOven.run.
+  phase: vapor
+  temperature: 283.15 K (10 deg C)
+  pressure: 1.01325 bar
+  total flow: 112.69165725 mol/s
+  enthalpy: -122001.147249 W
+  component flows and mole fractions:
+    propane: 112.69165725 mol/s  x=1
+    propene: 0 mol/s  x=0
+    H2: 0 mol/s  x=0
+    H2O: 0 mol/s  x=0
+
+[004] First process oven propane-only outlet
+  source: ProcessOven.run on the propane-containing feed only.
+  phase: vapor
+  temperature: 872.6357769 K (599.4857769 deg C)
+  pressure: 1.01325 bar
+  total flow: 112.69165725 mol/s
+  enthalpy: 8047044.09507 W
+  component flows and mole fractions:
+    propane: 112.69165725 mol/s  x=1
+    propene: 0 mol/s  x=0
+    H2: 0 mol/s  x=0
+    H2O: 0 mol/s  x=0
+
+[005] Reactor 1 inlet after recombining preheated water
+  source: Heated propane feed plus the preheated water side stream.
+  phase: vapor
+  temperature: 872.6357769 K (599.4857769 deg C)
+  pressure: 1.01325 bar
+  total flow: 1239.60822975 mol/s
+  enthalpy: 31597238.5978 W
+  component flows and mole fractions:
+    propane: 112.69165725 mol/s  x=0.0909090909091
+    propene: 0 mol/s  x=0
+    H2: 0 mol/s  x=0
+    H2O: 1126.9165725 mol/s  x=0.909090909091
+
+[006] Reactor 1 outlet
+  source: Reactor.run2; conversion=0.373920733651, catalyst_mass=2909.3209482 kg, volume=2.59760798946 m3.
+  phase: vapor
+  temperature: 784.702825472 K (511.552825472 deg C)
+  pressure: 1.10325 bar
+  total flow: 1281.74597691 mol/s
+  enthalpy: 26357106.2337 W
+  component flows and mole fractions:
+    propane: 70.5539100949 mol/s  x=0.0550451582185
+    propene: 42.1377471554 mol/s  x=0.032875271633
+    H2: 42.1377471554 mol/s  x=0.032875271633
+    H2O: 1126.9165725 mol/s  x=0.879204298515
+
+[007] Process oven 2 outlet / reactor 2 inlet
+  source: ProcessOven.run to reactor 2 inlet temperature.
+  phase: vapor
+  temperature: 867.964705718 K (594.814705718 deg C)
+  pressure: 1.10325 bar
+  total flow: 1281.74597691 mol/s
+  enthalpy: 31510995.4197 W
+  component flows and mole fractions:
+    propane: 70.5539100949 mol/s  x=0.0550451582185
+    propene: 42.1377471554 mol/s  x=0.032875271633
+    H2: 42.1377471554 mol/s  x=0.032875271633
+    H2O: 1126.9165725 mol/s  x=0.879204298515
+
+[008] Reactor 2 outlet
+  source: Reactor.run2; conversion=0.257125962003, catalyst_mass=3521.47408518 kg, volume=3.14417329034 m3.
+  phase: vapor
+  temperature: 830.487913247 K (557.337913247 deg C)
+  pressure: 1.10325 bar
+  total flow: 1299.88721892 mol/s
+  enthalpy: 29258238.8885 W
+  component flows and mole fractions:
+    propane: 52.4126680887 mol/s  x=0.0403209350211
+    propene: 60.2789891617 mol/s  x=0.0463724762306
+    H2: 60.2789891617 mol/s  x=0.0463724762306
+    H2O: 1126.9165725 mol/s  x=0.866934112518
+
+[009] Process oven 3 outlet / reactor 3 inlet
+  source: ProcessOven.run to reactor 3 inlet temperature.
+  phase: vapor
+  temperature: 936.510760863 K (663.360760863 deg C)
+  pressure: 1.10325 bar
+  total flow: 1299.88721892 mol/s
+  enthalpy: 35972010.9132 W
+  component flows and mole fractions:
+    propane: 52.4126680887 mol/s  x=0.0403209350211
+    propene: 60.2789891617 mol/s  x=0.0463724762306
+    H2: 60.2789891617 mol/s  x=0.0463724762306
+    H2O: 1126.9165725 mol/s  x=0.866934112518
+
+[010] Reactor 3 outlet
+  source: Reactor.run2; conversion=0.569983130568, catalyst_mass=18338.1365663 kg, volume=16.3733362199 m3.
+  phase: vapor
+  temperature: 876.205869797 K (603.055869797 deg C)
+  pressure: 1.10325 bar
+  total flow: 1329.76155555 mol/s
+  enthalpy: 32267663.6685 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.0169491525424
+    propene: 90.1533258003 mol/s  x=0.0677966101695
+    H2: 90.1533258003 mol/s  x=0.0677966101695
+    H2O: 1126.9165725 mol/s  x=0.847457627119
+
+[011] Flash 1 compressor outlet
+  source: Compressor.run; power=18980.742601 kW, intercooling=12653.8284007 kW.
+  phase: vapor
+  temperature: 974.565127958 K (701.415127958 deg C)
+  pressure: 4.52092725941 bar
+  total flow: 1329.76155555 mol/s
+  enthalpy: 38594577.8688 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.0169491525424
+    propene: 90.1533258003 mol/s  x=0.0677966101695
+    H2: 90.1533258003 mol/s  x=0.0677966101695
+    H2O: 1126.9165725 mol/s  x=0.847457627119
+
+[012] Flash 1 saturated feed
+  source: Sensible heat-exchanger routing from optimizeCodexBinary.py; T is H2O saturation at 4.52092725941 bar.
+  phase: vapor
+  temperature: 421.220140138 K (148.070140138 deg C)
+  pressure: 4.52092725941 bar
+  total flow: 1329.76155555 mol/s
+  enthalpy: 6117961.52167 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.0169491525424
+    propene: 90.1533258003 mol/s  x=0.0677966101695
+    H2: 90.1533258003 mol/s  x=0.0677966101695
+    H2O: 1126.9165725 mol/s  x=0.847457627119
+
+[013] Flash 1 liquid outlet
+  source: FlashTank water-removal split: all H2O to liquid.
+  phase: liquid
+  temperature: 421.220140138 K (148.070140138 deg C)
+  pressure: 4.52092725941 bar
+  total flow: 1126.9165725 mol/s
+  enthalpy: -37293734.2894 W
+  component flows and mole fractions:
+    propane: 0 mol/s  x=0
+    propene: 0 mol/s  x=0
+    H2: 0 mol/s  x=0
+    H2O: 1126.9165725 mol/s  x=1
+
+[014] Flash 1 vapor outlet
+  source: FlashTank water-removal split: propane/propene/H2 to vapor.
+  phase: vapor
+  temperature: 421.220140138 K (148.070140138 deg C)
+  pressure: 4.52092725941 bar
+  total flow: 202.844983051 mol/s
+  enthalpy: 1383368.92075 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.111111111111
+    propene: 90.1533258003 mol/s  x=0.444444444444
+    H2: 90.1533258003 mol/s  x=0.444444444444
+    H2O: 0 mol/s  x=0
+
+[015] Flash 1 separated water after process oven reheating
+  source: ProcessOven.run on separated flash-1 water for recycle/feed water heating.
+  phase: liquid
+  temperature: 872.6357769 K (599.4857769 deg C)
+  pressure: 4.52092725941 bar
+  total flow: 1126.9165725 mol/s
+  enthalpy: 23550194.5028 W
+  component flows and mole fractions:
+    propane: 0 mol/s  x=0
+    propene: 0 mol/s  x=0
+    H2: 0 mol/s  x=0
+    H2O: 1126.9165725 mol/s  x=1
+
+[016] Flash 2 compressor outlet
+  source: Compressor.run; power=2108.19462011 kW, intercooling=1405.46308007 kW.
+  phase: vapor
+  temperature: 475.824250398 K (202.674250398 deg C)
+  pressure: 37.7536649323 bar
+  total flow: 202.844983051 mol/s
+  enthalpy: 2086100.46079 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.111111111111
+    propene: 90.1533258003 mol/s  x=0.444444444444
+    H2: 90.1533258003 mol/s  x=0.444444444444
+    H2O: 0 mol/s  x=0
+
+[017] Flash 2 saturated feed
+  source: Sensible heat-exchanger routing from optimizeCodexBinary.py; T is propene saturation at 37.7536649323 bar.
+  phase: vapor
+  temperature: 357.717925633 K (84.5679256333 deg C)
+  pressure: 37.7536649323 bar
+  total flow: 202.844983051 mol/s
+  enthalpy: 633203.804201 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.111111111111
+    propene: 90.1533258003 mol/s  x=0.444444444444
+    H2: 90.1533258003 mol/s  x=0.444444444444
+    H2O: 0 mol/s  x=0
+
+[018] Flash 2 liquid outlet
+  source: FlashTank hydrogen-removal split: propane/propene to liquid.
+  phase: liquid
+  temperature: 357.717925633 K (84.5679256333 deg C)
+  pressure: 37.7536649323 bar
+  total flow: 112.69165725 mol/s
+  enthalpy: -347314.995134 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.2
+    propene: 90.1533258003 mol/s  x=0.8
+    H2: 0 mol/s  x=0
+    H2O: 0 mol/s  x=0
+
+[019] Flash 2 vapor outlet
+  source: FlashTank hydrogen-removal split: all H2 to vapor.
+  phase: vapor
+  temperature: 357.717925633 K (84.5679256333 deg C)
+  pressure: 37.7536649323 bar
+  total flow: 90.1533258003 mol/s
+  enthalpy: 155543.143787 W
+  component flows and mole fractions:
+    propane: 0 mol/s  x=0
+    propene: 0 mol/s  x=0
+    H2: 90.1533258003 mol/s  x=1
+    H2O: 0 mol/s  x=0
+
+[020] Binary distillation feed
+  source: Liquid flash-2 outlet after distillation feed temperature/pressure conditioning.
+  phase: liquid
+  temperature: 365.413639129 K (92.2636391286 deg C)
+  pressure: 21.9383871628 bar
+  total flow: 112.69165725 mol/s
+  enthalpy: 273478.977476 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.2
+    propene: 90.1533258003 mol/s  x=0.8
+    H2: 0 mol/s  x=0
+    H2O: 0 mol/s  x=0
+
+[021] Binary distillation model proxy feed
+  source: Model stream used by VectorizedDistillationColumn.run; H2 and H2O are forced to zero.
+  phase: liquid
+  temperature: 365.413639129 K (92.2636391286 deg C)
+  pressure: 21.9383871628 bar
+  total flow: 112.69165725 mol/s
+  enthalpy: 273478.977476 W
+  component flows and mole fractions:
+    propane: 22.5383314501 mol/s  x=0.2
+    propene: 90.1533258003 mol/s  x=0.8
+    H2: 0 mol/s  x=0
+    H2O: 0 mol/s  x=0
+
+[022] Distillation distillate product
+  source: VectorizedDistillationColumn.run vapor product.
+  phase: vapor
+  temperature: 327.696964591 K (54.5469645907 deg C)
+  pressure: 21.9383871628 bar
+  total flow: 85.5962730748 mol/s
+  enthalpy: 167950.469329 W
+  component flows and mole fractions:
+    propane: 0.0523780556373 mol/s  x=0.000611919815615
+    propene: 85.5438950192 mol/s  x=0.999388080184
+    H2: 0 mol/s  x=0
+    H2O: 0 mol/s  x=0
+
+[023] Distillation bottoms product
+  source: VectorizedDistillationColumn.run liquid product.
+  phase: liquid
+  temperature: 334.830837517 K (61.6808375171 deg C)
+  pressure: 21.9383871628 bar
+  total flow: 27.0953841756 mol/s
+  enthalpy: -257563.86155 W
+  component flows and mole fractions:
+    propane: 22.4859533944 mol/s  x=0.82988132771
+    propene: 4.60943078113 mol/s  x=0.17011867229
+    H2: 0 mol/s  x=0
+    H2O: 0 mol/s  x=0
+
+=== STREAM MASS BALANCE CHECKS ===
+Flash 1 max absolute species balance error: 0 mol/s
+  propane: 0 mol/s
+  propene: 0 mol/s
+  H2: 0 mol/s
+  H2O: 0 mol/s
+Flash 2 max absolute species balance error: 0 mol/s
+  propane: 0 mol/s
+  propene: 0 mol/s
+  H2: 0 mol/s
+  H2O: 0 mol/s
+Distillation max absolute species balance error: 2.60058641288e-12 mol/s
+  propane: 1.87228010873e-12 mol/s
+  propene: -2.60058641288e-12 mol/s
+  H2: 0 mol/s
+  H2O: 0 mol/s
+
+=== COLUMN DUTIES ===
+Condenser duty: -11990281.7781 W
+Reboiler duty: 11627172.4902 W
